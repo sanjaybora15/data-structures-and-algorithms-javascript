@@ -7,6 +7,10 @@ function reverse(str){
 	}
 	console.log(reverse("This is reversed string"))
 
+//using arrow function
+	let rev1 = str => str.split("").reverse().join("");
+	console.log(rev1('hello world'));
+
 //using for loop
 
 function revrese(str){
@@ -17,6 +21,16 @@ function revrese(str){
 	return reversed;
 }
 console.log(reverse("This is reversed string using for loop"));
+
+//another for loop
+function rev(str){
+  let reversed = "";
+  for(let ch of str){
+    reversed = ch+reversed;
+  }
+  return reversed;
+}
+console.log(rev("hello world"));
 
 // Using Recursion substr() and charAt()
 

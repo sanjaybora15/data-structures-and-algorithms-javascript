@@ -16,7 +16,7 @@ function anagrams(stringA, stringB){
     if(Object.keys(aCharMap).length !== Object.keys(bCharMap).length){
         return 'String length is not same, Hence not anagram';
     }
-    // check all letter same exists or not
+    // check all letter same exists or not!!!
     for(let char in aCharMap){
         if(aCharMap[char] !== bCharMap[char]){
             return 'String is not anagram';
@@ -25,4 +25,4 @@ function anagrams(stringA, stringB){
     return `'${stringA}' and '${stringB}' is anagram `;
 }
 
-console.log(anagrams('fire hire','hire fire'))
+console.log(anagrams('hello boss fire hire','hire fire boss hello'))

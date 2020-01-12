@@ -17,3 +17,20 @@ function palindrome(str){
 	return (rev === str)? ` ${str} is palindrome` : ` ${str} is not palindrome`;
 	}
 	console.log(palindrome("MADAM"))
+
+	// Palindrome numbers
+	
+(function poli(num) {
+    var rem,temp,total=0
+    temp = num
+    while(num>0){
+        rem = num%10;
+        num = parseInt(num/10)
+        total = total*10+rem
+    }
+    if(temp === total)
+    return  console.log(` ${temp} number is palindrome`)
+    return  console.log(` ${temp} number not palindrome`)
+}(11211))
+
+

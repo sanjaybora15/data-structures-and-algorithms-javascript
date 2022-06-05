@@ -7,7 +7,7 @@ var longestPalindrome = function(s) {
         let r = i
         checkSubstring(l,r,s)
         
- 				l = i;
+ 		l = i;
         r = i+1
         checkSubstring(l,r,s)
     }
